@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  height: 100%;
+  background-color: rgb(17, 14, 27);
+}
+
+.dashboard {
+  height: 100%;
+}
+
+.nav {
+  display: block;
+  width: 280px;
+  height: 100%;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(17, 14, 27);
+}
+
+.start {
+  width: 100%;
+  height: calc(100% - 90px);
+}
+
+.nav .start .logo {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s ease-in-out;
+}
+
+.nav .start .logo .master {
+  width: 11rem;
+  height: 7rem;
+  background-image: url("../assets/images/logo-master-white.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav .start .menu {
+  list-style:  none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.nav .start .menu li {
+  display: block;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.nav .start .menu li a {
+  width: calc(100% - 20px);
+  display: flex;
+  align-items: center;
+  color: #F2F2F2;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 30px 0 0 30px;
+  transition: all ease-in-out .4s;
+}
+
+.nav .start .menu li a .bi {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 10px;
+}
+
+.ico-first {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-dashboard.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li.active .ico-first {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-dashboard-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li a:hover .ico-first {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-dashboard-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ico-second {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-user.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li.active .ico-second {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-user-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li a:hover .ico-second {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-user-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ico-third {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-register.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li.active .ico-third {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-register-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li a:hover .ico-third {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-register-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ico-fourth {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-report.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li.active .ico-fourth {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-report-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li a:hover .ico-fourth {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-report-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ico-fifth {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-help.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li.active .ico-fifth {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-help-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li a:hover .ico-fifth {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-help-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ico-sixth {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-exit.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li.active .ico-sixth {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-exit-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li a:hover .ico-sixth {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-exit-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav .start .menu li a:hover {
+  width: calc(100% - 20px);
+  color: #110E1B;
+  background-color: rgb(181, 230, 29);
+}
+
+.nav .start .menu li.active a{
+  width: calc(100% - 20px);
+  color: #110E1B;
+  background-color: rgb(181, 230, 29);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  float: end;
+  color: #F2F2F2;
+}
+
+.content {
+  width: calc(100% - 280px);
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  float: right;
+}
+
+.content .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  height: 70px;
+  padding: 0 30px;
+  font-weight: bold;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 24px;
+}
+
+.content .header .view {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.content .header .view .grid {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 14px;
+}
+
+.ico-grid {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-grid-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

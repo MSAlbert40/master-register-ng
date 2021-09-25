@@ -1,0 +1,89 @@
+<section>
+  <div class="header" [formGroup]="employeeForm">
+    <div class="left-header">
+      <div class="card">
+        <h2>Datos Personales</h2>
+        <div class="double-input">
+          <div class="left-input">
+            <span>Nombre</span>
+            <input type="text" name="" formControlName="name">
+          </div>
+          <div class="right-input">
+            <span>Apellidos</span>
+            <input type="text" name="" formControlName="lastName">
+          </div>
+        </div>
+        <div class="input">
+          <span>Correo</span>
+          <input type="email" name="" formControlName="email">
+        </div>
+        <div class="double-input">
+          <div class="left-input">
+            <span>Edad</span>
+            <input type="text" name="" formControlName="age">
+          </div>
+          <div class="right-input">
+            <span>Género</span>
+            <select [(ngModel)]="selectGender" name="" [ngModelOptions]="{standalone: true}">
+              <option *ngFor="let gender of typeGender" [value]="gender.name">
+                {{gender.name}}
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="double-input">
+          <div class="left-input">
+            <span>DNI</span>
+            <input type="text" name="" formControlName="dni">
+          </div>
+          <div class="right-input">
+            <span>Celular</span>
+            <input type="text" name="" formControlName="phone">
+          </div>
+        </div>
+        <div class="input">
+          <span>Dirección</span>
+          <input type="text" name="" formControlName="address">
+        </div>
+      </div>
+    </div>
+    <div class="right-header">
+      <div class="card">
+        <h2>Datos Laborales</h2>
+        <div class="input">
+          <span>Nombre de Usuario</span>
+          <input type="text" name="" formControlName="username">
+        </div>
+        <div class="input">
+          <span>Contraseña</span>
+          <input type="password" name="" formControlName="password">
+        </div>
+        <div class="input">
+          <span>Horario</span>
+          <select [(ngModel)]="scheduleId" name="" [ngModelOptions]="{standalone: true}">
+            <option *ngFor="let schedule of scheduleList" [value]="schedule.id">
+              {{schedule.timeIn}} - {{schedule.timeOut}}
+            </option>
+          </select>
+        </div>
+        <div class="input">
+          <span>Area de Trabajo</span>
+          <select [(ngModel)]="workAreaId" name="" [ngModelOptions]="{standalone: true}">
+            <option *ngFor="let workArea of workAreaList" [value]="workArea.id">
+              {{workArea.name}}
+            </option>
+          </select>
+        </div>
+        <div class="input">
+          <span>Salario</span>
+          <input type="number" name="" formControlName="salary">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="input">
+      <input type="submit" value="Registrar Empleado" name="" (click)="addEmployee()">
+    </div>
+  </div>
+</section>

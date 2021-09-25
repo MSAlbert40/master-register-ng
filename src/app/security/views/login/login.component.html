@@ -1,0 +1,32 @@
+<section>
+  <div class="img">
+    <div class="navbar">
+      <div class="logo"></div>
+    </div>
+    <img src="assets/images/background/main.jpg" alt="">
+  </div>
+  <diV class="content">
+    <div class="form">
+      <h2>Inicio de Sesión</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="logIn()" novalidate>
+        <div class="error" *ngIf="loginInvalid">
+          <p>El usuario/correo o contraseña no fueron reconocidos</p>
+        </div>
+        <div class="input">
+          <span>Usuario/Correo</span>
+          <input type="text" name="" formControlName="username">
+        </div>
+        <div class="input">
+          <span>Contraseña</span>
+          <input type="password" name="" formControlName="password">
+        </div>
+        <div class="input">
+          <input type="submit" value="Ingresar" name="">
+        </div>
+        <div class="remember">
+          <label><a href="/Recovery-Password"> ¿Olvidó su contraseña?</a></label>
+        </div>
+      </form>
+    </div>
+  </diV>
+</section>
