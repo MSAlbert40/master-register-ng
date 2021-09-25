@@ -19,7 +19,8 @@ export class AppComponent {
   }
 
   visibleOn() {
-    if(this.router.url == '/Dashboard' || this.router.url == '/Register-Employee' || this.router.url == '/Reports' || this.router.url == '/Employees') this.dashboard = true;
+    if(this.router.url == '/Dashboard' || this.router.url == '/Register-Employee' || this.router.url == '/Reports' ||
+      this.router.url == '/Employees' || this.router.url == '/Work-Area') this.dashboard = true;
     return this.dashboard;
   }
 
