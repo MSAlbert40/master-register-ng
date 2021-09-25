@@ -1,0 +1,73 @@
+<section>
+  <div class="header" [formGroup]="updateForm">
+    <div class="left-header">
+      <div class="card">
+        <h2>Actualizar Datos Personales</h2>
+        <div class="double-input">
+          <div class="left-input">
+            <span>Nombre</span>
+            <input type="text" name="" [ngModel]="userClass.name" formControlName="name">
+          </div>
+          <div class="right-input">
+            <span>Apellidos</span>
+            <input type="text" name="" [ngModel]="userClass.lastName" formControlName="lastName">
+          </div>
+        </div>
+        <div class="double-input">
+          <div class="left-input">
+            <span>Edad</span>
+            <input type="text" name="" [ngModel]="userClass.age" formControlName="age">
+          </div>
+          <div class="right-input">
+            <span>Género</span>
+            <select [(ngModel)]="selectGender" name="" [ngModelOptions]="{standalone: true}">
+              <option *ngFor="let gender of typeGender" [value]="gender.name">
+                {{gender.name}}
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="input">
+          <span>Dirección</span>
+          <input type="text" name="" [ngModel]="userClass.address" formControlName="address">
+        </div>
+        <div class="double-input">
+          <div class="left-input">
+            <span>DNI</span>
+            <input type="text" name="" [ngModel]="userClass.dni" formControlName="dni">
+          </div>
+          <div class="right-input">
+            <span>Celular</span>
+            <input type="text" name="" [ngModel]="userClass.phone" formControlName="phone">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right-header">
+      <div class="card">
+        <h2>Actualizar Datos Laborales</h2>
+        <div class="input">
+          <span>Nombre de Usuario</span>
+          <input type="text" name="" [ngModel]="userClass.username" formControlName="username">
+        </div>
+        <div class="input">
+          <span>Contraseña</span>
+          <input type="text" name=""  formControlName="password">
+        </div>
+        <div class="input">
+          <span>Correo</span>
+          <input type="email" name="" [ngModel]="userClass.email" formControlName="email">
+        </div>
+        <div class="input">
+          <span>Salario</span>
+          <input type="number" name="" [ngModel]="userClass.salary" formControlName="salary">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="input">
+      <input type="submit" value="Actualizar" name="" (click)="updateData()">
+    </div>
+  </div>
+</section>

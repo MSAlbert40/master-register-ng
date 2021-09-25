@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  height: calc(100% - 70px);
+}
+
+section .header {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  position: relative;
+  display: flex;
+}
+
+section .header .first-header {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  margin-left: 2.5rem;
+  margin-right: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+section .header .second-header {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+section .header .third-header {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+section .header .fourth-header {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  padding: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 18px;
+  border-color: #eeeeee;
+  border-style: solid;
+  border-width: 0.1rem;
+  box-shadow: 5px 5px 5px #eeeeee;
+  cursor: pointer;
+}
+
+.card span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.card .img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.ico-view-one {
+  width: 100%;
+  height: 100%;
+  background-image: url("src/assets/images/icons/icon-employee.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ico-view-two {
+  width: 100%;
+  height: 100%;
+  background-image: url("src/assets/images/icons/ico-area.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ico-view-three {
+  width: 100%;
+  height: 100%;
+  background-image: url("src/assets/images/icons/icon-time.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ico-view-four {
+  width: 100%;
+  height: 100%;
+  background-image: url("src/assets/images/icons/icon-list.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

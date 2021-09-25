@@ -1,0 +1,83 @@
+<section>
+  <div class="header">
+    <div class="under-header">
+      <div class="card">
+        <div class="input">
+          <span>Buscar por Nombre: </span>
+          <input type="email" name="" [(ngModel)]="userName">
+          <input type="submit" value="Search" name="" (click)="searchByName()">
+        </div>
+      </div>
+    </div>
+    <div class="ground-header">
+      <table mat-table [dataSource]="userList" class="mat-elevation-z8 card">
+
+        <ng-container matColumnDef="employee">
+          <th mat-header-cell *matHeaderCellDef> Trabajador </th>
+          <td mat-cell *matCellDef="let element"> {{element.lastName}}, {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="workArea">
+          <th mat-header-cell *matHeaderCellDef> Area </th>
+          <td mat-cell *matCellDef="let element"> {{element.workArea.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="schedule">
+          <th mat-header-cell *matHeaderCellDef> Horario </th>
+          <td mat-cell *matCellDef="let element"> {{element.schedule.timeIn}} - {{element.schedule.timeOut}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="salary">
+          <th mat-header-cell *matHeaderCellDef> Sueldo </th>
+          <td mat-cell *matCellDef="let element"> {{element.salary}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="email">
+          <th mat-header-cell *matHeaderCellDef> Correo </th>
+          <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="dni">
+          <th mat-header-cell *matHeaderCellDef> DNI </th>
+          <td mat-cell *matCellDef="let element"> {{element.dni}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="age">
+          <th mat-header-cell *matHeaderCellDef> Edad </th>
+          <td mat-cell *matCellDef="let element"> {{element.age}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="gender">
+          <th mat-header-cell *matHeaderCellDef> Genero </th>
+          <td mat-cell *matCellDef="let element"> {{element.gender}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="address">
+          <th mat-header-cell *matHeaderCellDef> Dirección </th>
+          <td mat-cell *matCellDef="let element"> {{element.address}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="phone">
+          <th mat-header-cell *matHeaderCellDef> Telefono </th>
+          <td mat-cell *matCellDef="let element"> {{element.phone}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="options">
+          <th mat-header-cell *matHeaderCellDef> Opciones </th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-flat-button (click)="updateEmployee(element)">Editar</button>
+            <button mat-flat-button (click)="deleteEmployee(element)">Eliminar</button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+  <div class="body">
+    <div class="input">
+      <input type="submit" value="Imprimir" name="">
+    </div>
+  </div>
+</section>
