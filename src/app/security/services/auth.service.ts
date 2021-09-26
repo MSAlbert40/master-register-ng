@@ -6,6 +6,7 @@ import { environment } from "../../../environments/environment";
 import { MessageResponse } from "../interfaces/message-response";
 import {WorkArea} from "../interfaces/work-area";
 import {Schedule} from "../interfaces/schedule";
+import {TypeRequest} from "../interfaces/type-request";
 
 @Injectable({
   providedIn: 'root'
@@ -40,6 +41,11 @@ export class AuthService {
   // All Schedule
   listSchedule(): Observable<MessageResponse<Schedule[]>> {
     return this.http.get<MessageResponse<Schedule[]>>(environment.apiURL + '/schedule/');
+  }
+
+  // All Type Request
+  listTypeRequest(): Observable<MessageResponse<TypeRequest[]>> {
+    return this.http.get<MessageResponse<TypeRequest[]>>(environment.apiURL + '/typeRequest/');
   }
 
   loginUser(token: string, user: number, name: string, role: string) {

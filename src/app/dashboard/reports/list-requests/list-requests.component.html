@@ -1,0 +1,54 @@
+<section>
+  <div class="header">
+    <div class="under-header">
+      <div class="card">
+        <div class="input">
+          <span>Buscar por Solicitud: </span>
+          <select [(ngModel)]="typeRequestId" name="" [ngModelOptions]="{standalone: true}">
+            <option *ngFor="let typeRequest of typeRequestList" [value]="typeRequest.id">
+              {{typeRequest.name}}
+            </option>
+          </select>
+          <input type="submit" value="Search" name="" (click)="viewAllRequestByTypeRequest()">
+        </div>
+      </div>
+    </div>
+    <div class="ground-header">
+      <table mat-table [dataSource]="requestList" class="mat-elevation-z8 card">
+
+        <ng-container matColumnDef="employee">
+          <th mat-header-cell *matHeaderCellDef> Trabajador </th>
+          <td mat-cell *matCellDef="let element"> {{element.employee.lastName}}, {{element.employee.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="workArea">
+          <th mat-header-cell *matHeaderCellDef> Area </th>
+          <td mat-cell *matCellDef="let element"> {{element.employee.workArea.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="typeRequest">
+          <th mat-header-cell *matHeaderCellDef> Tipo de Solicitud </th>
+          <td mat-cell *matCellDef="let element"> {{element.typeRequest.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="description">
+          <th mat-header-cell *matHeaderCellDef> Descripción </th>
+          <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="dni">
+          <th mat-header-cell *matHeaderCellDef> DNI </th>
+          <td mat-cell *matCellDef="let element"> {{element.employee.dni}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="email">
+          <th mat-header-cell *matHeaderCellDef> Correo </th>
+          <td mat-cell *matCellDef="let element"> {{element.employee.email}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+  </div>
+</section>

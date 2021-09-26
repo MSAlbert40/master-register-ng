@@ -8,6 +8,7 @@ import {ReportsComponent} from "./dashboard/reports/reports.component";
 import {ListEmployeesComponent} from "./dashboard/reports/list-employees/list-employees.component";
 import {WorkAreaEmployeesComponent} from "./dashboard/reports/work-area-employees/work-area-employees.component";
 import {ProfileComponent} from "./dashboard/profile/profile.component";
+import {ListRequestsComponent} from "./dashboard/reports/list-requests/list-requests.component";
 
 const routes: Routes = [
   { path: 'LogIn', component: LoginComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'Employees', component: ListEmployeesComponent },
   { path: 'Work-Area', component: WorkAreaEmployeesComponent },
   { path: 'Profile', component: ProfileComponent },
+  { path: 'Requests', component: ListRequestsComponent },
   { path: '', redirectTo: 'LogIn', pathMatch: 'full' }
 ]
 
