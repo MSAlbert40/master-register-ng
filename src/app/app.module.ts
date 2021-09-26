@@ -24,6 +24,7 @@ import { ProfileComponent } from './dashboard/profile/profile.component';
 import { ListRequestsComponent } from './dashboard/reports/list-requests/list-requests.component';
 import { AddRequestComponent } from './dashboard/add-request/add-request.component';
 import { ListAttendancesComponent } from './dashboard/reports/list-attendances/list-attendances.component';
+import { MarkAttendanceComponent } from './dashboard/mark-attendance/mark-attendance.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ListAttendancesComponent } from './dashboard/reports/list-attendances/l
     ProfileComponent,
     ListRequestsComponent,
     AddRequestComponent,
-    ListAttendancesComponent
+    ListAttendancesComponent,
+    MarkAttendanceComponent
   ],
     imports: [
         BrowserModule,

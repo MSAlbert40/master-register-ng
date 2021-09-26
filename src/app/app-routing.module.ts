@@ -11,6 +11,7 @@ import {ProfileComponent} from "./dashboard/profile/profile.component";
 import {ListRequestsComponent} from "./dashboard/reports/list-requests/list-requests.component";
 import {AddRequestComponent} from "./dashboard/add-request/add-request.component";
 import {ListAttendancesComponent} from "./dashboard/reports/list-attendances/list-attendances.component";
+import {MarkAttendanceComponent} from "./dashboard/mark-attendance/mark-attendance.component";
 
 const routes: Routes = [
   { path: 'LogIn', component: LoginComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'Requests', component: ListRequestsComponent },
   { path: 'Add-Request', component: AddRequestComponent },
   { path: 'Attendances', component: ListAttendancesComponent },
+  { path: 'Mark-Attendance', component: MarkAttendanceComponent },
   { path: '', redirectTo: 'LogIn', pathMatch: 'full' }
 ]
 

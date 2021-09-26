@@ -1,0 +1,33 @@
+<section>
+  <div class="header">
+    <div class="first-header">
+      <div class="card">
+        <div class="img">
+          <h2>{{attendance.attendance}}</h2>
+        </div>
+        <span>N° de Asistencias</span>
+      </div>
+    </div>
+    <div class="second-header">
+      <div class="card">
+        <div class="img">
+          <h2>{{attendance.absent}}</h2>
+        </div>
+        <span>N° de Faltas</span>
+      </div>
+    </div>
+    <div class="third-header">
+      <div class="card">
+        <div class="img">
+          <h2>{{attendance.late}}</h2>
+        </div>
+        <span>N° de Tardanzas</span>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="input">
+      <input type="submit" value="Marcar Asistencia" name="" (click)="markAttendance()">
+    </div>
+  </div>
+</section>

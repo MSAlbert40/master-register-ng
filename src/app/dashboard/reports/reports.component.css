@@ -54,7 +54,7 @@ section .header .fourth-header {
   width: 25%;
   height: 100%;
   display: flex;
-  margin-right: 1.5rem;
+  margin-right: 2.5rem;
   margin-left: 1.5rem;
   justify-content: center;
   align-items: center;

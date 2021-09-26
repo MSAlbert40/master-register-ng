@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Oswald', sans-serif;
+  text-decoration: none;
 }
 
 section {
@@ -16,23 +17,35 @@ section .header {
   height: auto;
   margin-top: 2rem;
   position: relative;
+  display: flex;
 }
 
-section .header .under-header {
-  width: calc(100% - 5rem);
+section .header .first-header {
+  width: 33%;
   height: 100%;
   display: flex;
   margin-left: 2.5rem;
+  margin-right: 1.5rem;
   justify-content: center;
   align-items: center;
 }
 
-section .header .ground-header {
-  width: calc(100% - 5rem);
+section .header .second-header {
+  width: 33%;
   height: 100%;
   display: flex;
-  margin-left: 2.5rem;
-  margin-top: 2rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+section .header .third-header {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  margin-right: 2.5rem;
+  margin-left: 1.5rem;
   justify-content: center;
   align-items: center;
 }
@@ -41,36 +54,39 @@ section .header .ground-header {
   width: 100%;
   height: auto;
   padding: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   border-radius: 18px;
   border-color: #eeeeee;
   border-style: solid;
   border-width: 0.1rem;
   box-shadow: 5px 5px 5px #eeeeee;
+  cursor: pointer;
 }
 
-table {
-  width: 100%;
-}
-
-th, td {
-  font-size: 1rem;
-}
-
-button {
-  background: rgb(181, 230, 29);
-  color: #110E1B;
-  border-radius: 12px;
-  margin-right: 0.8rem;
-}
-
-.card h2 {
-  margin-left: 0.7rem;
-  font-size: 1.5em;
-  font-family: 'Oswald', sans-serif;
+.card span {
   font-weight: bold;
-  display: inline-block;
-  letter-spacing: 1px;
-  color: rgb(17, 14, 27);
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.card .img {
+  background-color: greenyellow;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+h2 {
+  margin-top: 15px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8vw;
 }
 
 section .body {
@@ -84,42 +100,24 @@ section .body {
   align-items: center;
 }
 
-section .input span {
+section .body .input input{
+  width: 30vh;
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #241D39;
   font-size: 20px;
-}
-section .input input[type="submit"],
-section .input select {
-  width: 20vh;
-  padding: 10px 20px;
-  outline: none;
-  margin-left: 1rem;
-  font-weight: 400;
-  border: 1px solid #241D39;
-  font-size: 16px;
-  color: #241D39;
-  background: #F2F2F2;
+  color: #F2F2F2;
+  background: rgb(36, 29, 57);
   border-radius: 15px;
 }
 
-section .input input[type="text"] {
-  width: 60vh;
-  padding: 10px 20px;
-  outline: none;
-  margin-left: 1rem;
-  font-weight: 400;
-  border: 1px solid #241D39;
-  font-size: 16px;
-  color: #241D39;
-  background: #F2F2F2;
-  border-radius: 15px;
-}
-
-section .input input[type="submit"] {
+section .body .input input[type="submit"] {
   text-align: center;
   background: rgb(181, 230, 29);
+  border: 1px solid  rgb(181, 230, 29);
   color: #110E1B;
   outline: none;
-  border: none;
   font-weight: 800;
   cursor: pointer;
   margin-top: 7px;
