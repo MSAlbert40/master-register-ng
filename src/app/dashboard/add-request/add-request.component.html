@@ -1,0 +1,18 @@
+<section>
+  <div class="header">
+    <div class="under-header">
+      <div class="card" [formGroup]="requestForm">
+        <div class="input">
+          <span>¿Que solicitud desea realizar?</span>
+          <select [(ngModel)]="typeRequestId" name="" [ngModelOptions]="{standalone: true}">
+            <option *ngFor="let typeRequest of typeRequestList" [value]="typeRequest.id">
+              {{typeRequest.name}}
+            </option>
+          </select>
+          <input type="text" name="" formControlName="description">
+          <input type="submit" value="Enviar" name="" (click)="sendRequest()">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

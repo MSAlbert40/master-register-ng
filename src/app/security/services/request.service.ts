@@ -17,7 +17,7 @@ export class RequestService {
     let params = new HttpParams();
     params = params.set('employeeId', String(employee));
     params = params.set('typeRequestId', String(typeRequest));
-    return this.http.post<MessageResponse<Request>>(environment.apiURL + '/request/add', {params});
+    return this.http.post<MessageResponse<Request>>(environment.apiURL + '/request/add', body,{params});
   }
 
   // Get Request by Type Request And Employee

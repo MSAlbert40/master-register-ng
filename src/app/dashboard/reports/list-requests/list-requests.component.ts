@@ -12,7 +12,6 @@ import {Request} from "../../../security/interfaces/request";
 export class ListRequestsComponent implements OnInit {
 
   requestList: Request[] = [];
-  requestName: string = '';
 
   typeRequestId: any;
   typeRequestList: TypeRequest[] = [];

@@ -22,6 +22,7 @@ import { UpdateEmployeeComponent } from './dashboard/reports/list-employees/upda
 import { WorkAreaEmployeesComponent } from './dashboard/reports/work-area-employees/work-area-employees.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
 import { ListRequestsComponent } from './dashboard/reports/list-requests/list-requests.component';
+import { AddRequestComponent } from './dashboard/add-request/add-request.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { ListRequestsComponent } from './dashboard/reports/list-requests/list-re
     UpdateEmployeeComponent,
     WorkAreaEmployeesComponent,
     ProfileComponent,
-    ListRequestsComponent
+    ListRequestsComponent,
+    AddRequestComponent
   ],
     imports: [
         BrowserModule,
