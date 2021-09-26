@@ -1,0 +1,75 @@
+<section>
+  <div class="header">
+    <div class="left-header">
+      <div class="card">
+
+      </div>
+    </div>
+    <div class="right-header">
+      <div class="card">
+        <div class="card-right">
+          <h2>Información Laboral</h2>
+          <div class="input">
+            <span>Username: </span>
+            <p>{{userClass.username}}</p>
+          </div>
+          <div class="input">
+            <span>Rol: </span>
+            <p>{{roleName}}</p>
+          </div>
+          <div class="input">
+            <span>Salario: </span>
+            <p>{{userClass.salary}}</p>
+          </div>
+          <div class="input">
+            <span>Area de desempeño: </span>
+            <p>{{userClass.workArea.name}}</p>
+          </div>
+          <div class="input">
+            <span>Horario de trabajo: </span>
+            <p>{{userClass.schedule.timeIn}} - {{userClass.schedule.timeOut}}</p>
+          </div>
+        </div>
+        <div class="card-left">
+          <h2>Información Personal</h2>
+          <div class="double-input">
+            <div class="left-input">
+              <span>Apellidos & Nombre:</span>
+              <p>{{userClass.lastName}}, {{userClass.name}}</p>
+            </div>
+            <div class="right-input">
+              <span>Edad:</span>
+              <p>{{userClass.age}}</p>
+            </div>
+          </div>
+          <div class="double-input">
+            <div class="left-input">
+              <span>Correo:</span>
+              <p>{{userClass.email}}</p>
+            </div>
+            <div class="right-input">
+              <span>DNI:</span>
+              <p>{{userClass.dni}}</p>
+            </div>
+          </div>
+          <div class="double-input">
+            <div class="left-input">
+              <span>Genéro:</span>
+              <p>{{userClass.gender}}</p>
+            </div>
+            <div class="right-input">
+              <span>Celular:</span>
+              <p>{{userClass.phone}}</p>
+            </div>
+          </div>
+          <div class="input">
+            <span>Dirección:</span>
+            <p>{{userClass.address}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+  </div>
+</section>

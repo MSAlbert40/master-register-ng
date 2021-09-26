@@ -42,10 +42,11 @@ export class AuthService {
     return this.http.get<MessageResponse<Schedule[]>>(environment.apiURL + '/schedule/');
   }
 
-  loginUser(token: string, user: number, name: string) {
+  loginUser(token: string, user: number, name: string, role: string) {
     localStorage.setItem('token', token);
     localStorage.setItem('id', String(user));
     localStorage.setItem('nameUser', name);
+    localStorage.setItem('role', role);
     return true;
   }
 
@@ -57,6 +58,8 @@ export class AuthService {
   logOut() {
     localStorage.removeItem('token');
     localStorage.removeItem('id');
+    localStorage.removeItem('nameUser');
+    localStorage.removeItem('role');
     return true;
   }
 
@@ -65,4 +68,6 @@ export class AuthService {
   getUser() { return localStorage.getItem('id'); }
 
   getNameUser() { return localStorage.getItem('nameUser'); }
+
+  getRole() { return localStorage.getItem('role'); }
 }

@@ -31,13 +31,14 @@ export class LoginComponent implements OnInit {
           this.loginInvalid = true;
         },
         next: (res) => {
-          this.authService.loginUser(res.data.token, res.data.id, (res.data.lastName + ', ' + res.data.name));
+          this.authService.loginUser(res.data.token, res.data.id, (res.data.lastName + ', ' + res.data.name), res.data.role);
           window.location.href = '/Dashboard';
         },
         complete: () => {
           console.log('complete');
           console.log('token:', this.authService.getToken());
           console.log('id:', this.authService.getUser());
+          console.log('role', this.authService.getRole());
         },
       });
     } else {

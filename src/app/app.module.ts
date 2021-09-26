@@ -20,6 +20,7 @@ import { ListEmployeesComponent } from './dashboard/reports/list-employees/list-
 import {MatButtonModule} from "@angular/material/button";
 import { UpdateEmployeeComponent } from './dashboard/reports/list-employees/update-employee/update-employee.component';
 import { WorkAreaEmployeesComponent } from './dashboard/reports/work-area-employees/work-area-employees.component';
+import { ProfileComponent } from './dashboard/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { WorkAreaEmployeesComponent } from './dashboard/reports/work-area-employ
     ReportsComponent,
     ListEmployeesComponent,
     UpdateEmployeeComponent,
-    WorkAreaEmployeesComponent
+    WorkAreaEmployeesComponent,
+    ProfileComponent
   ],
     imports: [
         BrowserModule,

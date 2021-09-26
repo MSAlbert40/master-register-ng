@@ -305,3 +305,57 @@ li a:hover .ico-sixth {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.ico-third-io {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-request.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li.active .ico-third-io {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-request-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li a:hover .ico-third-io {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-request-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ico-fourth-io {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-attendance.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li.active .ico-fourth-io {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-attendance-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+li a:hover .ico-fourth-io {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/icons/ico-attendance-main.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

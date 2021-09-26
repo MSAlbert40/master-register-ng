@@ -12,15 +12,26 @@ export class AppComponent {
 
   login = true;
   dashboard = false;
+
+  manager: boolean | undefined;
+  employee: boolean | undefined;
   username: string | null | undefined;
 
   constructor(private authService: AuthService, private router: Router) {
     if(this.authService.isLoggedIn()) { this.username = this.authService.getNameUser(); }
+    if(this.authService.getRole() == 'ROLE_MANAGER') {
+      this.manager = true;
+      this.employee = false;
+    }
+    else if(this.authService.getRole() == 'ROLE_EMPLOYEE') {
+      this.employee = true;
+      this.manager = false;
+    }
   }
 
   visibleOn() {
     if(this.router.url == '/Dashboard' || this.router.url == '/Register-Employee' || this.router.url == '/Reports' ||
-      this.router.url == '/Employees' || this.router.url == '/Work-Area') this.dashboard = true;
+      this.router.url == '/Employees' || this.router.url == '/Work-Area' || this.router.url == '/Profile') this.dashboard = true;
     return this.dashboard;
   }
 
