@@ -18,4 +18,8 @@ export class ReportsComponent implements OnInit {
   viewEmployeesByWorkArea() {
     window.location.href = '/Work-Area';
   }
+
+  viewRequests() {
+    window.location.href = '/Requests';
+  }
 }
