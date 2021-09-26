@@ -22,4 +22,8 @@ export class ReportsComponent implements OnInit {
   viewRequests() {
     window.location.href = '/Requests';
   }
+
+  viewAttendances() {
+    window.location.href = '/Attendances';
+  }
 }

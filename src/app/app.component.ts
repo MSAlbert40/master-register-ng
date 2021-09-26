@@ -32,7 +32,7 @@ export class AppComponent {
   visibleOn() {
     if(this.router.url == '/Dashboard' || this.router.url == '/Register-Employee' || this.router.url == '/Reports' ||
       this.router.url == '/Employees' || this.router.url == '/Work-Area' || this.router.url == '/Profile' ||
-      this.router.url == '/Requests' || this.router.url == '/Add-Request') this.dashboard = true;
+      this.router.url == '/Requests' || this.router.url == '/Add-Request' || this.router.url == '/Attendances') this.dashboard = true;
     return this.dashboard;
   }
 
