@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiURL: 'https://master-register.herokuapp.com/api'
+  apiURL: 'https://localhost:4200'
 };
 
 /*
