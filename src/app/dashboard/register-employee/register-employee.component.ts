@@ -3,6 +3,9 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {AuthService} from "../../security/services/auth.service";
 import {Schedule} from "../../security/interfaces/schedule";
 import {WorkArea} from "../../security/interfaces/work-area";
+import {MatDialog} from "@angular/material/dialog";
+import {UpdateEmployeeComponent} from "../reports/list-employees/update-employee/update-employee.component";
+import {MessageComponent} from "./message/message.component";
 
 @Component({
   selector: 'app-register-employee',
@@ -20,7 +23,7 @@ export class RegisterEmployeeComponent implements OnInit {
   workAreaId: any;
   workAreaList: WorkArea[] = [];
 
-  constructor(private authService: AuthService, private formBuilder: FormBuilder) {
+  constructor(private authService: AuthService, private formBuilder: FormBuilder, private dialog: MatDialog) {
     this.employeeForm = this.formBuilder.group({
       username: ['', [Validators.required]],
       password: ['', [Validators.required]],
@@ -78,7 +81,8 @@ export class RegisterEmployeeComponent implements OnInit {
           console.log(res);
           console.log(this.employeeForm.value);
           console.log(this.managerId);
-          window.location.reload();
+          this.dialog.open(MessageComponent, { autoFocus:true })
+          //window.location.reload();
         },
         complete: () => console.log('Complete')
       })

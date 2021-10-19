@@ -17,7 +17,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { RegisterEmployeeComponent } from './dashboard/register-employee/register-employee.component';
 import { ReportsComponent } from './dashboard/reports/reports.component';
 import { ListEmployeesComponent } from './dashboard/reports/list-employees/list-employees.component';
-import {MatButtonModule} from "@angular/material/button";
+import { MatButtonModule } from "@angular/material/button";
 import { UpdateEmployeeComponent } from './dashboard/reports/list-employees/update-employee/update-employee.component';
 import { WorkAreaEmployeesComponent } from './dashboard/reports/work-area-employees/work-area-employees.component';
 import { ProfileComponent } from './dashboard/profile/profile.component';
@@ -25,6 +25,7 @@ import { ListRequestsComponent } from './dashboard/reports/list-requests/list-re
 import { AddRequestComponent } from './dashboard/add-request/add-request.component';
 import { ListAttendancesComponent } from './dashboard/reports/list-attendances/list-attendances.component';
 import { MarkAttendanceComponent } from './dashboard/mark-attendance/mark-attendance.component';
+import { MessageComponent } from './dashboard/register-employee/message/message.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MarkAttendanceComponent } from './dashboard/mark-attendance/mark-attend
     ListRequestsComponent,
     AddRequestComponent,
     ListAttendancesComponent,
-    MarkAttendanceComponent
+    MarkAttendanceComponent,
+    MessageComponent
   ],
     imports: [
         BrowserModule,
