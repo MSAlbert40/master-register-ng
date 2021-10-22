@@ -4,8 +4,7 @@
 
 export const environment = {
   production: false,
-  //apiURL: 'https://localhost:4200' //Heroku
-  apiURL: 'https://master-register.herokuapp.com/api' //Local
+  apiURL: 'https://localhost:4200'
 };
 
 /*
