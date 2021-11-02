@@ -26,6 +26,7 @@ import { AddRequestComponent } from './dashboard/add-request/add-request.compone
 import { ListAttendancesComponent } from './dashboard/reports/list-attendances/list-attendances.component';
 import { MarkAttendanceComponent } from './dashboard/mark-attendance/mark-attendance.component';
 import { MessageComponent } from './dashboard/register-employee/message/message.component';
+import { WindowComponent } from './dashboard/mark-attendance/window/window.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { MessageComponent } from './dashboard/register-employee/message/message.
     AddRequestComponent,
     ListAttendancesComponent,
     MarkAttendanceComponent,
-    MessageComponent
+    MessageComponent,
+    WindowComponent
   ],
     imports: [
         BrowserModule,

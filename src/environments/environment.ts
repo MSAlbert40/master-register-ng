@@ -4,8 +4,12 @@
 
 export const environment = {
   production: false,
-  //apiURL: 'https://master-register.herokuapp.com/api', // Deploy Local
-  apiURL: 'https://localhost:4200' // Deploy Heroku
+<<<<<<< Updated upstream
+  apiURL: 'https://localhost:4200'
+=======
+  apiURL: 'https://master-register.herokuapp.com/api', // Deploy Local
+  //apiURL: 'https://localhost:4200' // Deploy Heroku
+>>>>>>> Stashed changes
 };
 
 /*
