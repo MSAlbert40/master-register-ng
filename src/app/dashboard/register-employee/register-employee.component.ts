@@ -6,6 +6,7 @@ import {WorkArea} from "../../security/interfaces/work-area";
 import {MatDialog} from "@angular/material/dialog";
 import {UpdateEmployeeComponent} from "../reports/list-employees/update-employee/update-employee.component";
 import {MessageComponent} from "./message/message.component";
+import {ProfileComponent} from "../profile/profile.component";
 
 @Component({
   selector: 'app-register-employee',

@@ -3,6 +3,9 @@ import {AuthService} from "../../security/services/auth.service";
 import {AttendanceService} from "../../security/services/attendance.service";
 import {Attendance} from "../../security/interfaces/attendance";
 import {FormBuilder, FormGroup} from "@angular/forms";
+import {MatDialog} from "@angular/material/dialog";
+import {MessageComponent} from "../register-employee/message/message.component";
+import {WindowComponent} from "./window/window.component";
 
 @Component({
   selector: 'app-mark-attendance',
@@ -22,7 +25,7 @@ export class MarkAttendanceComponent implements OnInit {
   number: number | undefined;
   employeeId: string | null | undefined;
 
-  constructor(private authService:AuthService, private attendanceService: AttendanceService, private formBuilder: FormBuilder) {
+  constructor(private authService:AuthService, private attendanceService: AttendanceService, private formBuilder: FormBuilder, private dialog: MatDialog) {
     this.dateForm = this.formBuilder.group({
       dateTime: ''
     })
@@ -54,7 +57,8 @@ export class MarkAttendanceComponent implements OnInit {
         error: (err) => console.log(err),
         next: (res) => {
           console.log(res);
-          window.location.reload();
+          this.dialog.open(WindowComponent, { autoFocus:true })
+          //window.location.reload();
         },
         complete: () => console.log('Complete')
       })
